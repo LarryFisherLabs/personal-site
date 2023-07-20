@@ -23,7 +23,9 @@ export default function About() {
               <p className='pt-5 text-center'>
                 This job not only exposed me to the entire stack but also 
                 got me very comfortable using javascript, kubernetes, gitlab, postman, newman, 
-                selenium, zalenium, elastic search, logstash, kibana, grafana, filebeat and more.
+                selenium, zalenium, elastic search, logstash, kibana, grafana, filebeat and more. I 
+                also got good exposure to developing microservice driven production grade software 
+                for major companies.
               </p>
               <p className='pt-5 text-center'>
                 For years I have been very interested in the potential of technologies like the 
