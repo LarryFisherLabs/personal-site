@@ -53,6 +53,7 @@ export default function Home() {
             <Projects />
           )
         }
+        <a className={"pt-3"} href="/lars-resume.pdf" download="lars-resume"><u>Download CV</u></a>
       </main>
     </div>
   )
