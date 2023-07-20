@@ -2,6 +2,7 @@ import { Inter } from 'next/font/google'
 import { useState } from 'react'
 import About from './about/About'
 import Experience from './experience/Experience'
+import Projects from './projects/Projects'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -43,12 +44,7 @@ export default function Home() {
         ) : sectionIndex === 1 ? (
           <Experience />
         ) : (
-          <div className='flex flex-col items-center pt-10 max-w-3xl'>
-            <h2 className={`${inter.className} text-2xl font-semibold`}>Projects</h2>
-            <div className='p-5 rounded-lg bg-purple-400/20 border-2 m-4 lg:p-7'>
-              <p className='text-center'>I build</p>
-            </div>
-          </div>
+          <Projects />
         )
       }
     </main>
