@@ -21,7 +21,7 @@ export const useSectionStatus = (isSbe, statusArray) => {
         const newRemArray = [newRemCount, newLgRemCount]
 
         updateMaxRemArray(newRemArray)
-    }, statusArray)
+    }, [statusArray, lgMaxHeights, maxHeights])
 
     return maxRemArray
 }

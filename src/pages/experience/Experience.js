@@ -5,7 +5,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Experience() {
   return (
-    <div className='flex flex-col items-center pt-5 lg:pt-10 max-w-3xl'>
+    <div className='flex flex-col items-center pt-4 lg:pt-10 max-w-3xl'>
       <h2 className={`${inter.className} text-2xl lg:text-3xl font-semibold`}>Experience</h2>
       <BitcowSection />
       <SbeSection />
