@@ -1,11 +1,12 @@
 import Section from '@component/components/Section'
+import PageContainer from '@component/components/tailwind/PageContainer'
+import PageTitle from '@component/components/tailwind/PageTitle'
 import { expPageObject } from '@component/utils/constants/expConsts'
-import { pageContainerClasses, pageTitleClasses } from '@component/utils/constants/tailwindConsts'
 
 export default function Experience() {
   return (
-    <div className={pageContainerClasses}>
-      <h2 className={pageTitleClasses}>Experience</h2>
+    <PageContainer>
+      <PageTitle>Experience</PageTitle>
       {
         expPageObject.sectionObjectArray.map((sectionObject, sectionIndex) => {
           return (
@@ -13,6 +14,6 @@ export default function Experience() {
           )
         })
       }      
-    </div>
+    </PageContainer>
   )
 }

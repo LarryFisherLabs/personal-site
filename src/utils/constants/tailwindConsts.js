@@ -1,5 +1,0 @@
-export const pageContainerClasses = 'flex flex-col items-center pt-2 lg:pt-10'
-export const pageTitleClasses = 'text-2xl lg:text-3xl font-semibold'
-export const sectionContainerClasses = 'text-sm lg:text-base px-5 py-2 rounded-lg bg-purple-400/20 border-2 m-2 text-center lg:px-11 lg:py-3 max-w-[19rem] lg:max-w-[47rem]'
-export const sectionHeaderClasses = 'text-lg lg:text-xl font-semibold hover:opacity-70 hover:cursor-pointer active:opacity-50'
-export const sectionStatusClasses = 'text-2xs lg:text-xs'

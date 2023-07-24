@@ -1,10 +1,11 @@
-import { pageContainerClasses, pageTitleClasses } from '@component/utils/constants/tailwindConsts'
 import NonTieredSection from './NonTieredSection'
+import PageContainer from './tailwind/PageContainer'
+import PageTitle from './tailwind/PageTitle'
 
 export default function NonTieredSectionPage({ secPageObj }) {
   return (
-    <div className={pageContainerClasses}>
-      <h2 className={pageTitleClasses}>{secPageObj.pageTitle}</h2>
+    <PageContainer>
+      <PageTitle>{secPageObj.pageTitle}</PageTitle>
       {
         secPageObj.secObjectsArray.map((sectionObject, index) => {
           return (
@@ -12,6 +13,6 @@ export default function NonTieredSectionPage({ secPageObj }) {
           )
         })
       }
-    </div>
+    </PageContainer>
   )
 }

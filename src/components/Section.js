@@ -1,7 +1,9 @@
-import { sectionContainerClasses, sectionHeaderClasses, sectionStatusClasses } from '@component/utils/constants/tailwindConsts'
 import { toggleSecStatusArray } from '@component/utils/general/sectionFuncs'
 import { useSectionStatus } from '@component/utils/hooks/useSectionStatus'
 import { useState } from 'react'
+import SectionContainer from './tailwind/SectionContainer'
+import SectionHeader from './tailwind/SectionHeader'
+import SectionStatus from './tailwind/SectionStatus'
 
 /*
     subSecObject : {
@@ -38,11 +40,11 @@ export default function Section({ sectionObj }) {
     }
 
     return (
-        <div className={sectionContainerClasses}>
-            <h2 className={sectionHeaderClasses} onClick={toggleMainSection}>
+        <SectionContainer>
+            <SectionHeader onClick={toggleMainSection}>
                 {sectionObj.title}
-                <p className={sectionStatusClasses}>{isMainSecOpen === false ? '(expand)' : '(close)'}</p>
-            </h2>
+                <SectionStatus isMainSecOpen={isMainSecOpen}></SectionStatus>
+            </SectionHeader>
             <div 
                 className={
                     'transition-all duration-1500 ease-linear origin-top overflow-hidden flex flex-col items-center ' + (
@@ -107,6 +109,6 @@ export default function Section({ sectionObj }) {
                     return [header, text]
                 })}
             </div>
-        </div>
+        </SectionContainer>
     )
 }
