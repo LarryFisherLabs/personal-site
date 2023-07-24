@@ -13,7 +13,7 @@ export const projectPageObject = {
         {
             title: 'Approval Manager',
             paragraphArray: [
-                'This is the first tool I made for my other website. I have started working on several more blockchain related tools and have plans for even more long term but wanted to add the prototype for this one as it was a more simple idea.',
+                'This is the first tool I made for my other website. I have started working on several more blockchain related tools and have plans for even more long term. I wanted to add the prototype for this one as it was a more simple idea.',
                 'This tool can identify all active approvals that you\'ve granted for third party smart contracts for both erc721 and erc20 tokens. It then gives you lists of active approvals with their details and a button for revoking them.'
             ],
             maxRemHeight: 10

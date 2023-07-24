@@ -1,14 +1,18 @@
-import { Inter } from 'next/font/google'
-import SbeSection from './SbeSection'
-import BitcowSection from './BitcowSection'
-const inter = Inter({ subsets: ['latin'] })
+import Section from '@component/components/Section'
+import { expPageObject } from '@component/utils/constants/expConsts'
+import { pageContainerClasses, pageTitleClasses } from '@component/utils/constants/tailwindConsts'
 
 export default function Experience() {
   return (
-    <div className='flex flex-col items-center pt-4 lg:pt-10 max-w-3xl'>
-      <h2 className={`${inter.className} text-2xl lg:text-3xl font-semibold`}>Experience</h2>
-      <BitcowSection />
-      <SbeSection />
+    <div className={pageContainerClasses}>
+      <h2 className={pageTitleClasses}>Experience</h2>
+      {
+        expPageObject.sectionObjectArray.map((sectionObject, sectionIndex) => {
+          return (
+            <Section key={'exp-sec-' + sectionIndex} sectionObj={sectionObject} />
+          )
+        })
+      }      
     </div>
   )
 }

@@ -1,3 +1,4 @@
+import { sectionContainerClasses, sectionHeaderClasses, sectionStatusClasses } from '@component/utils/constants/tailwindConsts'
 import { useState } from 'react'
 
 /*
@@ -12,10 +13,10 @@ export default function NonTieredSection({ sectionObject }) {
     const maxRemHeight = sectionObject.maxRemHeight
 
     return (
-        <div className='text-sm lg:text-base px-5 py-2 rounded-lg bg-purple-400/20 border-2 m-2 text-center lg:px-11 lg:py-3'>
-            <h2 className={'text-lg lg:text-xl font-semibold'} onClick={() => setIsSecOpen(!isSecOpen)}>
+        <div className={sectionContainerClasses}>
+            <h2 className={sectionHeaderClasses} onClick={() => setIsSecOpen(!isSecOpen)}>
                 {sectionObject.title}
-                <p className={'text-2xs lg:text-xs'}>{isSecOpen === false ? '(expand)' : '(close)'}</p>
+                <p className={sectionStatusClasses}>{isSecOpen === false ? '(expand)' : '(close)'}</p>
             </h2>
             <div 
                 className={

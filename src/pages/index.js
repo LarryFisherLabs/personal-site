@@ -53,7 +53,7 @@ export default function Home() {
             <Projects />
           )
         }
-        <a className={"pt-3"} href="/lars-resume.pdf" download="lars-resume"><u>Download CV</u></a>
+        <a className={"pt-3 hover:opacity-70 active:opacity-50"} href="/lars-resume.pdf" download="lars-resume"><u>Download CV</u></a>
       </main>
     </div>
   )

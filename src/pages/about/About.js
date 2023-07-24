@@ -1,16 +1,15 @@
-import { Inter } from 'next/font/google'
-const inter = Inter({ subsets: ['latin'] })
+import { pageContainerClasses, pageTitleClasses, sectionContainerClasses } from "@component/utils/constants/tailwindConsts";
 
 export default function About() {
     return (
-        <div className='flex flex-col items-center pt-4 lg:pt-10 max-w-3xl'>
-            <h2 className={`${inter.className} text-2xl font-semibold`}>About Me</h2>
-            <div className='px-5 py-3 text-sm rounded-lg bg-purple-400/20 border-2 m-4 lg:text-base lg:px-11 lg:py-4'>
+        <div className={pageContainerClasses}>
+            <h2 className={pageTitleClasses}>About Me</h2>
+            <div className={sectionContainerClasses}>
               <p className='text-center'>
                 My name is Lars. Ever since I learned to use Scratch in middle school I knew I wanted 
                 to be a software engineer. I got my BS in electrical and computer engineering with a 
-                minor in math from Northeastern University. I really enjoyed getting to learn about 
-                the deeper layers to computers and how they work from hardware to assembly code like 
+                minor in math from Northeastern University. I really enjoyed learning about 
+                the deeper layers of computers and how they work from hardware to assembly code like 
                 MIPS.
               </p>
               <p className='pt-5 text-center'>
@@ -43,12 +42,12 @@ export default function About() {
                 I decided to build a <q>dapp</q> where people could mint their own custom nfts 
                 with a few other features and more on the way. Building this project helped me feel 
                 really comfotable with things like react.js with redux and styled components, next.js 
-                with tailwind.css, express.js, web3.js, ethers.js, solidity, ganache and more
+                with tailwind.css, express.js, web3.js, ethers.js, solidity, ganache and more.
               </p>
               <p className='pt-5 text-center'>
                 I&apos;m a very social and kind natured person as well as a great communicator. I&apos;ve always 
                 been good at explaining technology and helping people understand complex concepts. I 
-                love to talk with any around me about innovative ideas and technology. But even more I 
+                love to talk with anyone about innovative ideas and technology. But even more I 
                 enjoy trying to build on these innovative ideas.
               </p>
             </div>
