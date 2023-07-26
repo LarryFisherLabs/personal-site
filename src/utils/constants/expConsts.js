@@ -95,8 +95,8 @@ export const bitcowObject = {
                         alt: 'Ant with EOD suit and flamethrower'
                     },
                     {
-                        imgUrl: 'https://nft-api-bphk.onrender.com/11155111/ants/images/14',
-                        alt: 'Ant with sunglasses, mask and LMG'
+                        imgUrl: 'https://nft-api-bphk.onrender.com/11155111/ants/images/1',
+                        alt: 'Ant with shotgun and cigar'
                     },
                     {
                         imgUrl: 'https://nft-api-bphk.onrender.com/11155111/ants/images/29',
