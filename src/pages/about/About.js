@@ -58,7 +58,7 @@ export default function About() {
             enjoy trying to build on these innovative ideas.
           </p>
         </div>
-        <button className="px-2 mt-1 lg:mt-3 rounded-lg bg-purple-400/20 border hover:bg-purple-400/40 active:bg-purple-400/30" onClick={() => setIsExpanded(!isExpanded)}>{isExpanded ? 'Close' : 'Expand'}</button>
+        <button className="px-2 mt-1 lg:mt-3 rounded-lg bg-purple-400/20 border lg:hover:bg-purple-400/40 active:bg-purple-400/30" onClick={() => setIsExpanded(!isExpanded)}>{isExpanded ? 'Close' : 'Expand'}</button>
       </SectionContainer>
     </PageContainer>
   )

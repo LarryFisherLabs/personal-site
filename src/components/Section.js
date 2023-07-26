@@ -76,7 +76,7 @@ export default function Section({ sectionObj }) {
                     const titleKey = `subSec${index.toString() + subSecObj.title}`
                     const contentKey = `subSecPs${index.toString() + subSecObj.title}`
                     const header = (
-                        <h2 key={titleKey} className={'text-xs lg:text-sm font-semibold pt-2 lg:pt-4 hover:opacity-70 hover:cursor-pointer active:opacity-50'} onClick={() => toggleSubSec(index)}>
+                        <h2 key={titleKey} className={'text-xs lg:text-sm font-semibold pt-2 lg:pt-4 lg:hover:opacity-70 hover:cursor-pointer active:opacity-50'} onClick={() => toggleSubSec(index)}>
                             {subSecObj.title}
                             <p className={'text-2xs lg:text-xs'}>{subSecStatArray[index] === false ? '(expand)' : '(close)'}</p>
                         </h2>
