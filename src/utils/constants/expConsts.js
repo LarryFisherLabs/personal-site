@@ -1,7 +1,7 @@
 // arrays of max heights for each of the 3 sub sections + index 0 in units of rem
 // index 0 is when all subsections are closed
 // export const cowMaxHeights = [39, 22, 45, 41, 40, 31]
-export const lgCowMaxHeights = [35, 16, 33, 32, 42, 39]
+export const lgCowMaxHeights = [35, 16, 33, 32, 46, 43]
 export const bitcowTitle = 'Larry Fisher Labs'
 
 // arrays of max heights for each of the 5 sub sections + index 0 in units of rem
