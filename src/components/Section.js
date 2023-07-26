@@ -4,6 +4,7 @@ import { useState } from 'react'
 import SectionContainer from './tailwind/SectionContainer'
 import SectionHeader from './tailwind/SectionHeader'
 import SectionStatus from './tailwind/SectionStatus'
+import ImageFromWeb from './tailwind/ImageFromWeb'
 
 /*
     imgObj: {
@@ -123,7 +124,7 @@ export default function Section({ sectionObj }) {
                                         subSecObj.preTxtImgObj.imgObjArray.map((imgObj, imgIndex) => {
                                             return (
                                                 <a key={subSecObj.title + '-image-' + imgIndex} href={imgObj.imgUrl} target="_blank">
-                                                    <img className='rounded-lg w-[3rem] h-[3rem] lg:w-[6.4rem] lg:h-[6.4rem]' src={imgObj.imgUrl} alt={imgObj.alt} />
+                                                    <ImageFromWeb imgUrl={imgObj.imgUrl} imgAlt={imgObj.alt} />
                                                 </a>
                                             )
                                         })

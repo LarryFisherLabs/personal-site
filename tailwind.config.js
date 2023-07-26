@@ -8,7 +8,8 @@ module.exports = {
   theme: {
     extend: {
       fontSize: {
-        '2xs': ['.625rem', '.75rem']
+        '2xs': ['.625rem', '.75rem'],
+        '3xs': ['.5rem', '.5rem']
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
