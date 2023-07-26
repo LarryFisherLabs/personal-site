@@ -1,7 +1,7 @@
 // arrays of max heights for each of the 3 sub sections + index 0 in units of rem
 // index 0 is when all subsections are closed
 // export const cowMaxHeights = [39, 22, 45, 41, 40, 31]
-export const lgCowMaxHeights = [35, 16, 33, 32, 30, 27]
+export const lgCowMaxHeights = [35, 16, 33, 32, 42, 39]
 export const bitcowTitle = 'Larry Fisher Labs'
 
 // arrays of max heights for each of the 5 sub sections + index 0 in units of rem
@@ -12,7 +12,7 @@ export const sbeTitle = 'SBE Vision'
 
 export const bitcowObject = {
     title: bitcowTitle,
-    subTitles: ['2022-Current'],
+    subTitles: ['2022-Current', '>14 months'],
     subSecMaxHeights: lgCowMaxHeights,
     paragraphArray:[
         'I became interested in blockchain technology in 2017 and quickly became obsessed with the potential of blockchains such as ethereum that combined the idea of public ledgers with smart contracts. I was in school to become an electrical/computer engineer but it became my dream to one day contribute to the “crypto” ecosystem.',
@@ -52,6 +52,31 @@ export const bitcowObject = {
         },
         {
             title: 'Token NFT Contract',
+            preTxtImgObj: {
+                imgObjArray: [
+                    {
+                        imgUrl: 'https://nft-api-bphk.onrender.com/5/coins/images/0',
+                        alt: 'Member Token'
+                    },
+                    {
+                        imgUrl: 'https://nft-api-bphk.onrender.com/5/coins/images/5',
+                        alt: 'Diamond Token'
+                    },
+                    {
+                        imgUrl: 'https://nft-api-bphk.onrender.com/5/coins/images/6',
+                        alt: 'Gold Token'
+                    },
+                    {
+                        imgUrl: 'https://nft-api-bphk.onrender.com/5/coins/images/7',
+                        alt: 'Silver Token'
+                    },
+                    {
+                        imgUrl: 'https://nft-api-bphk.onrender.com/5/coins/images/8',
+                        alt: 'Bronze Token'
+                    }
+                ],
+                description: 'Here you can see an example of each available token color. These images are being served by my express backend and the nfts they represent exist on the goerli test network. Click a token to see a larger image.'
+            },
             subSecParagraphs: [
                 'There are five different arcade token colors: bronze, silver, gold, diamond, and the red member token. My owner wallet is able to add addresses to enable wallets to mint one member token. Each token has the value of eth paid to mint it "engraved" into the token.',
                 'Member tokens get a one time discount on another token and an ant nft. All other tokens get a one time discount on just an ant nft. The largest discount is for members getting smaller for each lower color.',
@@ -63,6 +88,27 @@ export const bitcowObject = {
         },
         {
             title: 'Ant NFT Contract',
+            preTxtImgObj: {
+                imgObjArray: [
+                    {
+                        imgUrl: 'https://nft-api-bphk.onrender.com/11155111/ants/images/0',
+                        alt: 'Ant with EOD suit and flamethrower'
+                    },
+                    {
+                        imgUrl: 'https://nft-api-bphk.onrender.com/11155111/ants/images/14',
+                        alt: 'Ant with sunglasses, mask and LMG'
+                    },
+                    {
+                        imgUrl: 'https://nft-api-bphk.onrender.com/11155111/ants/images/29',
+                        alt: 'Ant with ghillie suit, cigar and medal'
+                    },
+                    {
+                        imgUrl: 'https://nft-api-bphk.onrender.com/11155111/ants/images/31',
+                        alt: 'Rambo Ant'
+                    }
+                ],
+                description: 'Here you can see an example of 4 ants that have been minted on the sepolia test network. These images are being served by my express backend. Click an ant to see a larger image.'
+            },
             subSecParagraphs: [
                 'The Army Ant NFTs have 15 different sections of customization. Some of the sections like the legs and antennas have a default option but the majority default to empty.',
                 'Each possible trait for each section has one of five rarities: base, very common, common, rare, and very rare. Each ant has the same base price with its total mint price increasing based on chosen traits.',
@@ -76,7 +122,7 @@ export const bitcowObject = {
 
 export const sbeObject = {
     title: sbeTitle,
-    subTitles: ['2020-2021', '(1 year, 2 months)'],
+    subTitles: ['2020-2021', '14 months'],
     subSecMaxHeights: lgSbeMaxHeights,
     paragraphArray: [
         'At my first software job I got a lot of serious exposure to fullstack software engineering through being in charge of QA for the fullstack. I also got involved in devops, backend development, customer support, and sales.',

@@ -25,7 +25,7 @@ module.exports = {
       },
       maxHeight: {
         'closed': '0rem',
-        'near-closed': '1rem',
+        'near-closed': '.5rem',
         'sec0': '20rem',
         'small-sec0': '27rem',
         'sec1': '30rem',

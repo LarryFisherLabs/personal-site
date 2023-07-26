@@ -6,8 +6,19 @@ import SectionHeader from './tailwind/SectionHeader'
 import SectionStatus from './tailwind/SectionStatus'
 
 /*
+    imgObj: {
+        imgUrl: url for image,
+        alt: string to be displayed in absence of image
+    }
+
+    preTxtImgObj: {
+        imgObjArray: array of imgObjs for displaying images before text see above,
+        description: description of images to be shown below
+    }
+
     subSecObject : {
         title: title of sub-section,
+        preTxtImgObj: optional for displaying images before text see above
         subSecParagraphs: array of paragraph strings for sub-section
     }
 
@@ -17,7 +28,7 @@ import SectionStatus from './tailwind/SectionStatus'
         subSecMaxHeights: array of max heights in rem for each subsection with the first elemnt being
             the max height of open section with all sub-sections closed,
         paragraphArray: array of paragraph strings that come before sub-sections,
-        subSecObjectArray: array of subSecObjects
+        subSecObjectArray: array of subSecObjects see above
     }
 */
 export default function Section({ sectionObj }) {
@@ -43,6 +54,15 @@ export default function Section({ sectionObj }) {
         <SectionContainer>
             <SectionHeader onClick={toggleMainSection}>
                 {sectionObj.title}
+                {
+                    sectionObj.subTitles.map((subTitle, index) => {
+                        return (
+                            <div key={sectionObj.title + '-subTitle-' + index} className={index === 0 ? 'text-sm lg:text-base' : 'text-xs lg:text-sm'}>
+                                {subTitle}
+                            </div>
+                        )
+                    })
+                }
                 <SectionStatus isMainSecOpen={isMainSecOpen}></SectionStatus>
             </SectionHeader>
             <div 
@@ -97,9 +117,23 @@ export default function Section({ sectionObj }) {
                                 )
                             }
                         >
+                            {!subSecObj.hasOwnProperty('preTxtImgObj') ? null : (
+                                <div key={'subSec-' + subSecObj.title + '-imgSec'}>
+                                    <div className='pt-1 lg:pt-2 flex flex-row flex-nowrap justify-center gap-x-0.5'>{
+                                        subSecObj.preTxtImgObj.imgObjArray.map((imgObj, imgIndex) => {
+                                            return (
+                                                <a key={subSecObj.title + '-image-' + imgIndex} href={imgObj.imgUrl} target="_blank">
+                                                    <img className='rounded-lg w-[3rem] h-[3rem] lg:w-[6.4rem] lg:h-[6.4rem]' src={imgObj.imgUrl} alt={imgObj.alt} />
+                                                </a>
+                                            )
+                                        })
+                                    }</div>
+                                    <p className={'pt-1 lg:pt-2 text-xs lg:text-sm'}>{subSecObj.preTxtImgObj.description}</p>
+                                </div>
+                            )}
                             {subSecObj.subSecParagraphs.map((paragraph, paragraphIndex) => {
                                 const paraKey = `${subSecObj.title}SubSec${index.toString()}P${paragraphIndex.toString()}`
-                                const pt = paragraphIndex === 0 ? 'pt-1' : 'pt-2 lg:pt-3'
+                                const pt = (paragraphIndex === 0 && !subSecObj.hasOwnProperty('preTxtImgObj')) ? 'pt-1' : 'pt-2 lg:pt-3'
                                 return (
                                     <p key={paraKey} className={'text-xs lg:text-sm ' + pt}>{paragraph}</p>
                                 )
