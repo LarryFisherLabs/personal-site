@@ -32,7 +32,7 @@ export const bitcowObject = {
             title: 'Frontend',
             subSecParagraphs: [
                 'For the frontend I built a react.js project using redux.js for state and hosted it on vercel. This frontend was able to get infomation from the blockchain using a user\'s browser wallet or from my backend.',
-                'The user is capable of switching between ethereum networks, redirecting to testnet faucets, minting custom nfts from my two contracts, viewing purchased nfts, viewing both full collections, viewing individual nfts with metadata, ability to edit the nfts state, and viewing other wallet\'s purchased nfts.',
+                'The user is capable of switching between ethereum networks, redirecting to testnet faucets, minting custom nfts from my two contracts, viewing purchased nfts, viewing both full collections, viewing individual nfts with metadata, ability to edit the nfts state and viewing other wallet\'s purchased nfts.',
                 'I tried to put a focus on UX with on screen directions for people with no wallet, no connected wallet, wallet connected to the wrong network, etc. I also helped UX with helpful popups to tell the user when things are going on in the background such as fetching data, making purchases, or just which network they\'re viewing data from.',
                 'The front end generally uses the user\'s wallet to fetch data from the blockchain. But to allow users with no wallet/connection to get a feel for the site I made it so that all needed data could also be fetched from my express backend.',
                 'I used styled components to handle all the css for the frontend. I built reusable components both styled and functional where possible. I got great frontend experience from resisting the urge to use any extra js packages.',
@@ -78,7 +78,7 @@ export const bitcowObject = {
                 description: 'Here you can see an example of each available token color. These images are being served by my express backend and the nfts they represent exist on the goerli test network. Click a token to see a larger image.'
             },
             subSecParagraphs: [
-                'There are five different arcade token colors: bronze, silver, gold, diamond, and the red member token. My owner wallet is able to add addresses to enable wallets to mint one member token. Each token has the value of eth paid to mint it "engraved" into the token.',
+                'There are five different arcade token colors: bronze, silver, gold, diamond and the red member token. My owner wallet is able to add addresses to enable wallets to mint one member token. Each token has the value of eth paid to mint it "engraved" into the token.',
                 'Member tokens get a one time discount on another token and an ant nft. All other tokens get a one time discount on just an ant nft. The largest discount is for members getting smaller for each lower color.',
                 'Each of the non-member tokens has a base price in ethereum: bronze: 0.001, silver: 0.002, gold: 0.003, diamond: 0.004. Everytime 9 tokens of any kind are minted each colors price goes up by 0.001 eth. Everytime 4 tokens of one color are minted that color\'s price increases by its base price.',
                 'I thought this would be an interesting experiment because I plan to release new collections over time and build experimental pvp on chain games utilizing them. All future possible collections will have a one time discount for each token just like the ants.',
@@ -111,7 +111,7 @@ export const bitcowObject = {
             },
             subSecParagraphs: [
                 'The Army Ant NFTs have 15 different sections of customization. Some of the sections like the legs and antennas have a default option but the majority default to empty.',
-                'Each possible trait for each section has one of five rarities: base, very common, common, rare, and very rare. Each ant has the same base price with its total mint price increasing based on chosen traits.',
+                'Each possible trait for each section has one of five rarities: base, very common, common, rare and very rare. Each ant has the same base price with its total mint price increasing based on chosen traits.',
                 'Base rarity traits add no extra cost with each increasing rarity adding slightly more cost. There can be a total of 10,000 ants with no limits to common rarities and lower. However rare and very rare traits have a count limit to enforce their rarity.',
                 'If successful this project will be an interesting experiment to see how trait counts increase based on public opinion and set price. It\'s possible the collection could sell out without ever using certain traits. The final state of the collection will depend on users choices.',
                 'Each token nft allows for a one time discount on an ant based on the token\'s color. The ant contract stores a boolean for each token on whether its discount is used. Ant contract also calls the token contract to make sure it is used by the correct owner.'
@@ -125,9 +125,9 @@ export const sbeObject = {
     subTitles: ['2020-2021', '14 months'],
     subSecMaxHeights: lgSbeMaxHeights,
     paragraphArray: [
-        'At my first software job I got a lot of serious exposure to fullstack software engineering through being in charge of QA for the fullstack. I also got involved in devops, backend development, customer support, and sales.',
+        'At my first software job I got a lot of serious exposure to fullstack software engineering through being in charge of QA for the fullstack. I also got involved in devops, backend development, customer support and sales.',
         'We were building a software for large scale companies to build "onotolgy networks" that could be integrated with one another to allow easy communication and interoperability between systems.',
-        'Our customers were companies like Ford, IBM, Oralce, Siemens, and many more large scale major companies. I got good experience working with and getting feedback from engineers at our customer companies.'
+        'Our customers were companies like Ford, IBM, Oralce, Siemens and many more large scale major companies. I got good experience working with and getting feedback from engineers at our customer companies.'
     ],
     subSecObjectArray: [
         {
