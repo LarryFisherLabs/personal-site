@@ -4,6 +4,7 @@ import About from './about/About'
 import Experience from './experience/Experience'
 import Projects from './projects/Projects'
 import Head from 'next/head'
+import TextButton from '@component/components/TextButton'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -53,7 +54,11 @@ export default function Home() {
             <Projects />
           )
         }
-        <a className={"pt-3 hover:opacity-70 active:opacity-50"} href="/lars-resume.pdf" download="lars-resume"><u>Download CV</u></a>
+        <div className='mt-2 py-3 px-4 inline space-x-4 rounded-lg border-[1px] bg-blue-800/30'>
+          <TextButton href="/lars-resume.pdf" label="Download CV" download="lars-resume" />
+          <TextButton href="https://armyants.vercel.app/" label="NFT UI" />
+          <TextButton href="https://github.com/LarryFisherLabs" label="Github" />
+        </div>
       </main>
     </div>
   )

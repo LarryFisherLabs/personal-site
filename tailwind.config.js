@@ -50,7 +50,11 @@ module.exports = {
         'sec10': '180rem',
         'small-sec10': '240rem',
         'sec11': '200rem',
-        'small-sec11': '267rem'
+        'small-sec11': '267rem',
+        'sec12': '220rem',
+        'small-sec12': '293rem',
+        'sec13': '240rem',
+        'small-sec13': '320rem'
       }
     },
   },

@@ -71,6 +71,8 @@ export default function Section({ sectionObj }) {
                     'transition-all duration-1500 ease-linear origin-top overflow-hidden flex flex-col items-center ' + (
                         isMainSecOpen === true ? (
                             'scale-100 opacity-100 max-w-[19rem] lg:max-w-[41.25rem] ' + (
+                                secLgMaxHeight > 220 ? 'max-h-small-sec13 lg:max-h-sec13' :
+                                secLgMaxHeight > 200 ? 'max-h-small-sec12 lg:max-h-sec12' :
                                 secLgMaxHeight > 180 ? 'max-h-small-sec11 lg:max-h-sec11' :
                                 secLgMaxHeight > 160 ? 'max-h-small-sec10 lg:max-h-sec10' :
                                 secLgMaxHeight > 140 ? 'max-h-small-sec9 lg:max-h-sec9' :

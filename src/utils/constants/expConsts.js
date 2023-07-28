@@ -21,15 +21,15 @@ export const bitcowObject = {
     ],
     subSecObjectArray: [
         {
-            title: 'Backend',
+            title: 'Express NFT Backend',
             subSecParagraphs: [
                 'The backend is written in js using express.js. It fetches blockchain data through an Infura api key and is hosted using Render. It is capable of generating user\'s digitally owned images from the variables set in the erc721 compliant smart contracts.',
-                'The backend has API end points for all the individual images of the two nft collections featured on my website for both test networks (goerli and sepolia) they are deployed on. There are also end points for each nfts metadata.',
-                'This backend allowed nfts to be viewed on the frontend even if users have no access to the blockchain. The formatted output conforms to opensea standards for erc721 so tokens can be viewed on 3rd party sites.'
+                'The backend has API end points for all the individual images of the two nft collections featured on my website for both test networks (goerli and sepolia) they are deployed on. There are also end points for each nft\'s metadata.',
+                'This backend allowed nfts to be viewed on the frontend even if users have no access to the blockchain. The formatted output conforms to opensea standards for erc721 so tokens can be viewed on 3rd party sites. The backend URLs are stored in the smart contracts of the nfts.'
             ]
         },
         {
-            title: 'Frontend',
+            title: 'React NFT Frontend',
             subSecParagraphs: [
                 'For the frontend I built a react.js project using redux.js for state and hosted it on vercel. This frontend was able to get infomation from the blockchain using a user\'s browser wallet or from my backend.',
                 'The user is capable of switching between ethereum networks, redirecting to testnet faucets, minting custom nfts from my two contracts, viewing purchased nfts, viewing both full collections, viewing individual nfts with metadata, ability to edit the nfts state and viewing other wallet\'s purchased nfts.',
@@ -51,7 +51,7 @@ export const bitcowObject = {
             ]
         },
         {
-            title: 'Token NFT Contract',
+            title: 'Arcade Token NFT',
             preTxtImgObj: {
                 imgObjArray: [
                     {
@@ -78,16 +78,16 @@ export const bitcowObject = {
                 description: 'Here you can see an example of each available token color. These images are being served by my express backend and the nfts they represent exist on the goerli test network. Click a token to see a larger image.'
             },
             subSecParagraphs: [
-                'There are five different arcade token colors: bronze, silver, gold, diamond and the red member token. My owner wallet is able to add addresses to enable wallets to mint one member token. Each token has the value of eth paid to mint it "engraved" into the token.',
+                'There are five different Arcade Token colors: bronze, silver, gold, diamond and the red member token. My owner wallet is able to add addresses to enable wallets to mint one member token. Each token has the value of eth paid to mint it "engraved" into the token.',
                 'Member tokens get a one time discount on another token and an ant nft. All other tokens get a one time discount on just an ant nft. The largest discount is for members getting smaller for each lower color.',
                 'Each of the non-member tokens has a base price in ethereum: bronze: 0.001, silver: 0.002, gold: 0.003, diamond: 0.004. Everytime 9 tokens of any kind are minted each colors price goes up by 0.001 eth. Everytime 4 tokens of one color are minted that color\'s price increases by its base price.',
-                'I thought this would be an interesting experiment because I plan to release new collections over time and build experimental pvp on chain games utilizing them. All future possible collections will have a one time discount for each token just like the ants.',
+                'I thought this collection would be an interesting experiment. I hope to release new collections over time. Each new collection will allow one discount per Arcade Token nft just like with the ants collection.',
                 'If the overall project grows in popularity tokens will have a greater value for the discounts they provide. At the same time token prices will be increasing as more get minted.',
                 'If the project grows, it will be interesitng to see if token color\'s prices grow linearly and what the final count of each color will be.'
             ]
         },
         {
-            title: 'Ant NFT Contract',
+            title: 'Army Ants NFT',
             preTxtImgObj: {
                 imgObjArray: [
                     {
