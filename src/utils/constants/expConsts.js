@@ -1,7 +1,7 @@
 // arrays of max heights for each of the 3 sub sections + index 0 in units of rem
 // index 0 is when all subsections are closed
 // export const cowMaxHeights = [39, 22, 45, 41, 40, 31]
-export const lgCowMaxHeights = [35, 16, 33, 32, 46, 43]
+export const lgCowMaxHeights = [35, 17, 33, 32, 49, 43]
 export const bitcowTitle = 'Larry Fisher Labs'
 
 // arrays of max heights for each of the 5 sub sections + index 0 in units of rem
@@ -82,8 +82,8 @@ export const bitcowObject = {
                 'Member tokens get a one time discount on another token and an ant nft. All other tokens get a one time discount on just an ant nft. The largest discount is for members getting smaller for each lower color.',
                 'Each of the non-member tokens has a base price in ethereum: bronze: 0.001, silver: 0.002, gold: 0.003, diamond: 0.004. Everytime 9 tokens of any kind are minted each colors price goes up by 0.001 eth. Everytime 4 tokens of one color are minted that color\'s price increases by its base price.',
                 'I thought this collection would be an interesting experiment. I hope to release new collections over time. Each new collection will allow one discount per Arcade Token nft just like with the ants collection.',
-                'If the overall project grows in popularity tokens will have a greater value for the discounts they provide. At the same time token prices will be increasing as more get minted.',
-                'If the project grows, it will be interesitng to see if token color\'s prices grow linearly and what the final count of each color will be.'
+                'If the popularity of the overall project grows, tokens will have a greater value for the discounts they provide. At the same time token prices will be increasing as more get minted. I also hope to build browser based, on chain, pvp games that utilize these tokens.',
+                'If the project sells out, it will be interesitng to see if token color\'s prices grow linearly and what the final count of each color will be.'
             ]
         },
         {
