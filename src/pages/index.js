@@ -39,7 +39,7 @@ export default function Home() {
         <title>Larry Fisher Labs</title>
         <meta name='description' content='The personal website of Lars.'/>
       </Head>
-      <main className="flex min-h-screen flex-col items-center p-4 lg:p-10">
+      <main className="relative flex min-h-screen flex-col items-center p-4 lg:p-10">
         <div className='flex flex-col items-center lg:flex-row lg:justify-between lg:min-w-full'>
           <div className='flex flex-col items-center lg:items-start'>
             <h1 className={`${inter.className} text-4xl font-semibold`}>Hello</h1>
@@ -51,16 +51,18 @@ export default function Home() {
             <button className={getNavButtonClass(2, sectionIndex)} onClick={() => setSectionIndex(2)}>Projects</button>
           </div>
         </div>
-        {
-          sectionIndex === 0 ? (
-            <About />
-          ) : sectionIndex === 1 ? (
-            <Experience />
-          ) : (
-            <Projects />
-          )
-        }
-        <div className='flex mt-2 py-3 rounded-lg border-[1px] bg-blue-800/30'>
+        <div className='pb-10 lg:pb-7'>
+          {
+            sectionIndex === 0 ? (
+              <About />
+            ) : sectionIndex === 1 ? (
+              <Experience />
+            ) : (
+              <Projects />
+            )
+          }
+        </div>
+        <div className='flex absolute bottom-2 lg:bottom-3 py-3 rounded-lg border-[1px] bg-blue-800/30'>
           <TextButton href="https://armyants.vercel.app/" label="NFT UI" />
           <TextButton href="/lars-resume.pdf" label="Download CV" download="lars-resume" />
           <TextButton href="https://github.com/LarryFisherLabs" label="Github" />
