@@ -68,7 +68,7 @@ export default function Home() {
             <button className={getNavButtonClass(2, sectionIndex)} onClick={() => setSectionIndex(2)}>Projects</button>
           </div>
         </div>
-        <div className='pb-10 lg:pb-7'>
+        <div className='pb-11 lg:pb-7'>
           {
             sectionIndex === 0 ? (
               <About />
@@ -79,7 +79,7 @@ export default function Home() {
             )
           }
         </div>
-        <div className='flex absolute bottom-2 lg:bottom-3 py-3 rounded-lg border-[1px] bg-blue-800/30'>
+        <div className='flex absolute bottom-2 py-3 rounded-lg border-[1px] bg-blue-800/30'>
           <TextButton href="https://armyants.vercel.app/" label="NFT UI" />
           <TextButton href="/lars-resume.pdf" label="Download CV" download="lars-resume" />
           <TextButton href="https://github.com/LarryFisherLabs" label="Github" />
