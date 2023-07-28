@@ -1,5 +1,5 @@
 import { Inter } from 'next/font/google'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import About from './about/About'
 import Experience from './experience/Experience'
 import Projects from './projects/Projects'
@@ -33,13 +33,30 @@ export default function Home() {
    */
   const [sectionIndex, setSectionIndex] = useState(0)
 
+  // keep track of view height to keep bottom banner on screen for mobile when url bar is down
+  const [viewHeight, setViewHeight] = useState(null)
+
+  useEffect(() => {
+    setViewHeight(window.innerHeight)
+
+    const handleResize = () => {
+      setViewHeight(window.innerHeight)
+    }
+
+    window.addEventListener('resize', handleResize)
+
+    return () => {
+      window.removeEventListener('resize', handleResize)
+    }
+  }, [])
+
   return (
     <div>
       <Head>
         <title>Larry Fisher Labs</title>
         <meta name='description' content='The personal website of Lars.'/>
       </Head>
-      <main className="relative flex min-h-screen flex-col items-center p-4 lg:p-10">
+      <main className={'relative flex flex-col items-center p-4 lg:p-10 ' + (viewHeight === null ? 'min-h-screen' : null)} style={viewHeight !== null ? {'minHeight': viewHeight} : null} >
         <div className='flex flex-col items-center lg:flex-row lg:justify-between lg:min-w-full'>
           <div className='flex flex-col items-center lg:items-start'>
             <h1 className={`${inter.className} text-4xl font-semibold`}>Hello</h1>
