@@ -60,9 +60,9 @@ export default function Home() {
             <Projects />
           )
         }
-        <div className='mt-2 py-3 px-4 inline space-x-4 rounded-lg border-[1px] bg-blue-800/30'>
-          <TextButton href="/lars-resume.pdf" label="Download CV" download="lars-resume" />
+        <div className='flex mt-2 py-3 rounded-lg border-[1px] bg-blue-800/30'>
           <TextButton href="https://armyants.vercel.app/" label="NFT UI" />
+          <TextButton href="/lars-resume.pdf" label="Download CV" download="lars-resume" />
           <TextButton href="https://github.com/LarryFisherLabs" label="Github" />
         </div>
       </main>
