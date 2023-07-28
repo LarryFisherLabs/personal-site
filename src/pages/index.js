@@ -8,10 +8,13 @@ import TextButton from '@component/components/TextButton'
 
 const inter = Inter({ subsets: ['latin'] })
 
-// buttonIndex:
-// 0 - left
-// 1 - middle
-// 2 - right
+/**
+ * Compile tailwind class names for nav bar buttons assuming there's 3 buttons.
+ * 
+ * @param {*} buttonIndex determines button position: 0 - left, 1 - middle, 2 - right
+ * @param {*} selectedIndex index of the currently selected option
+ * @returns tailwind classes for nav bar buttons
+ */
 const getNavButtonClass = (buttonIndex, selectedIndex) => {
   let classList = 'w-32 lg:px-4 lg:w-fit'
   if (buttonIndex === 0) classList = classList + ' rounded-l-lg'
@@ -22,9 +25,12 @@ const getNavButtonClass = (buttonIndex, selectedIndex) => {
 }
 
 export default function Home() {
-  // 0 - about
-  // 1 - experience
-  // 2 - projects
+  /*
+   * sectionIndex options:
+   *   - 0: about,
+   *   - 1: experience,
+   *   - 2: projects
+   */
   const [sectionIndex, setSectionIndex] = useState(0)
 
   return (
