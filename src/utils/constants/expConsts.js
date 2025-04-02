@@ -55,23 +55,23 @@ export const bitcowObject = {
             preTxtImgObj: {
                 imgObjArray: [
                     {
-                        imgUrl: 'https://nft-api-bphk.onrender.com/5/coins/images/0',
+                        imgUrl: 'https://nft-api-bphk.onrender.com/11155111/coins/images/0',
                         alt: 'Member Token'
                     },
                     {
-                        imgUrl: 'https://nft-api-bphk.onrender.com/5/coins/images/5',
+                        imgUrl: 'https://nft-api-bphk.onrender.com/11155111/coins/images/1',
                         alt: 'Diamond Token'
                     },
                     {
-                        imgUrl: 'https://nft-api-bphk.onrender.com/5/coins/images/6',
+                        imgUrl: 'https://nft-api-bphk.onrender.com/11155111/coins/images/3',
                         alt: 'Gold Token'
                     },
                     {
-                        imgUrl: 'https://nft-api-bphk.onrender.com/5/coins/images/7',
+                        imgUrl: 'https://nft-api-bphk.onrender.com/11155111/coins/images/4',
                         alt: 'Silver Token'
                     },
                     {
-                        imgUrl: 'https://nft-api-bphk.onrender.com/5/coins/images/8',
+                        imgUrl: 'https://nft-api-bphk.onrender.com/11155111/coins/images/7',
                         alt: 'Bronze Token'
                     }
                 ],
