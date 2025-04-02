@@ -13,7 +13,7 @@ export default function About() {
         <div className={'transition-all duration-1500 ease-linear origin-top overflow-hidden flex flex-col items-center ' + (
           isExpanded ? 'max-h-[75rem] lg:max-h-[50rem]' : 'max-h-[10.5rem] lg:max-h-[6.2rem]')}>
           <p className='pt-1'>
-            My name is Lars. Ever since I learned to use Scratch in middle school I knew I wanted 
+            My name is Jeff. Ever since I learned to use Scratch in middle school I knew I wanted 
             to be a software engineer. I got my BS in electrical and computer engineering with a 
             minor in math from Northeastern University. I really enjoyed learning about 
             the deeper layers of computers and how they work from hardware to assembly code like 

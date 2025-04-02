@@ -54,13 +54,13 @@ export default function Home() {
     <div>
       <Head>
         <title>Larry Fisher Labs</title>
-        <meta name='description' content='The personal website of Lars.'/>
+        <meta name='description' content='The personal website of Jeff.'/>
       </Head>
       <main className={'relative flex flex-col items-center p-4 lg:p-10 ' + (viewHeight === null ? 'min-h-screen' : null)} style={viewHeight !== null ? {'minHeight': viewHeight} : null} >
         <div className='flex flex-col items-center lg:flex-row lg:justify-between lg:min-w-full'>
           <div className='flex flex-col items-center lg:items-start'>
             <h1 className={`${inter.className} text-4xl font-semibold`}>Hello</h1>
-            <p className='text-lg pb-2 lg:pb-0'>Lars Here</p>
+            <p className='text-lg pb-2 lg:pb-0'>Jeff Here</p>
           </div>
           <div className='rounded-xl inline-flex h-8'>
             <button className={getNavButtonClass(0, sectionIndex)} onClick={() => setSectionIndex(0)}>About</button>
@@ -81,7 +81,7 @@ export default function Home() {
         </div>
         <div className='flex absolute bottom-2 py-3 rounded-lg border-[1px] bg-blue-800/30'>
           <TextButton href="https://armyants.vercel.app/" label="NFT UI" />
-          <TextButton href="/lars-resume.pdf" label="Download CV" download="lars-resume" />
+          <TextButton href="/secondary-resume.pdf" label="Download CV" download="jeff-secondary-resume" />
           <TextButton href="https://github.com/LarryFisherLabs" label="Github" />
         </div>
       </main>
